@@ -40,7 +40,7 @@
                 <td>{{ $product->visible }}</td>
                 <td>{{ $product->category_id }}</td>
                 <td>
-                    <a class="btn btn-primary" href="{{route('product.update', [$product->id])}}"><i
+                    <a class="btn btn-primary" href="{{route('product.edit', [$product->id])}}"><i
                                 class="fa fa-pencil" aria-hidden="true"></i></a>
                     <a class="btn btn-danger" href="{{ route('product.delete', [$product->id]) }}"><i
                                 class="fa fa-trash" aria-hidden="true"></i></a>

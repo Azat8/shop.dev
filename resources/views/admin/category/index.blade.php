@@ -30,7 +30,7 @@
                 <td>{{ $category->id }}</td>
                 <td style="width: 75%;">{{ $category->name}}</td>
                 <td>
-                    <a class="btn btn-primary" href="{{route('category.update', [$category->id])}}"><i
+                    <a class="btn btn-primary" href="{{route('category.edit', [$category->id])}}"><i
                                 class="fa fa-pencil" aria-hidden="true"></i></a>
                     <a class="btn btn-danger" href="{{ route('category.delete', [$category->id]) }}"><i
                                 class="fa fa-trash" aria-hidden="true"></i></a>

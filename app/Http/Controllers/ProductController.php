@@ -25,8 +25,7 @@ class ProductController extends BaseController
 
     public function save(Request $request)
     {
-
-        dd(Input::all());
+//        dd(Input::all());
         $model = new Product();
         $image = $this->fileUpload($request->file('image'), public_path('uploads/product_images/'));
         $request->merge(['image' => $image]);
@@ -42,14 +41,14 @@ class ProductController extends BaseController
         return redirect()->back()->with('delete-massage', $name);
     }
 
-    public function update(Request $request, $id)
+    public function edit(Request $request, $id)
     {
         $model = Product::find($id);
         $formRoute = ['product.update', $id];
         return view('admin.product.update', compact('model', 'formRoute'));
     }
 
-    public function edit(Request $request, $id)
+    public function update(Request $request, $id)
     {
         $model = Product::findOrFail($id);
         $oldName = $model->name;

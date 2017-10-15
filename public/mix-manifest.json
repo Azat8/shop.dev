@@ -2,5 +2,6 @@
     "/js/app.js": "/js/app.js",
     "/css/app.css": "/css/app.css",
     "/js/admin-layout-plugin.js": "/js/admin-layout-plugin.js",
-    "/css/admin-layout-plugin.css": "/css/admin-layout-plugin.css"
+    "/css/admin-layout-plugin.css": "/css/admin-layout-plugin.css",
+    "/front-end/product.css": "/front-end/product.css"
 }

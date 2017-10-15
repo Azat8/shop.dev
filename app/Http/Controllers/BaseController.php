@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Product;
 use Illuminate\Http\Request;
 
 class BaseController extends Controller
@@ -13,4 +14,5 @@ class BaseController extends Controller
 //        dd($fileName);
         return $fileName;
     }
+
 }
